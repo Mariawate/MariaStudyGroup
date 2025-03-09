@@ -13,6 +13,7 @@
             <th>Name</th>
             <th>Surname</th>
             <th>Email Address</th>
+            <th>Profile</th>
         </tr>
     </thead>
     <tbody>
@@ -23,6 +24,7 @@
                 <td>@member.Name</td>
                 <td>@member.Surname</td>
                 <td>@member.EmailAddress</td>
+                <td><a href="@Url.Content(member.MyLink)" class="btn">LINK</a></td>
             </tr>
         }
     </tbody>
