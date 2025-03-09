@@ -182,6 +182,18 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\StudyGroup\Index.cshtml" />
+    <Content Include="wwwroot\Images\Anthony-Mackie-Captain-America-4.webp" />
+    <Content Include="wwwroot\Images\antman-and-the-wasp-marvel-4.webp" />
+    <Content Include="wwwroot\Images\black-widow-1.webp" />
+    <Content Include="wwwroot\Images\Don-cheadle-as-rhodey-Cropped.webp" />
+    <Content Include="wwwroot\Images\hawkeye.webp" />
+    <Content Include="wwwroot\Images\peter-parker-Cropped.webp" />
+    <Content Include="wwwroot\Images\steve-rogers.webp" />
+    <Content Include="wwwroot\Images\The-Incredible-Hulk.webp" />
+    <Content Include="wwwroot\Images\thor-lightning.webp" />
+    <Content Include="wwwroot\Images\tony-stark-iron-man.webp" />
+    <Content Include="wwwroot\Images\Vision-Civil-War-Cropped.webp" />
+    <Content Include="wwwroot\Images\Wanda-Scarlet-Witch-Cropped.webp" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
