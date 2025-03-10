@@ -4,32 +4,36 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="~/wwwroot/Style.css">
+    @Styles.Render("~/wwwroot/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-        <div class="container">
-            @Html.ActionLink("Simple Starting Sample", "Index", "StudyGroup", new { area = "" }, new { @class = "navbar-brand" })
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <li>
-                    <a href="#"> Study Group Members</a>
-                    <ul>
-                        <li>@Html.ActionLink("List of Members", "Index", "Petrus", new { area = "" }, new { @class = "nav-link" })</li>
-                        <li><a href="~/HTML/Petrus.html">Petrus</a></li>
-                        <li><a href="~/HTML/Masilo.html">Masilo</a></li>
-                        <li><a href="~/HTML/Lynn.html">Lynn</a></li>
-                        <li><a href="~/HTML/Kopano.html">Kopano</a></li>
-                    </ul>
-                </li>
-                <li><a href="@Url.Action("Sample", "Home")"></a></li>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+     <div class="container">
+        <a class="navbar-brand" href="~/Home/Index">Simple Starting Sample</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav"></ul>
+        </div>
+     </div>
+                
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">List of Members ▼</button>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Complete List of Members", "Index", "StudyGroup")</li>
+                <li><a href="~/HTML/Maria.html">Maria</a></li>
+                <li><a href="~/HTML/Petrus.html">Petrus</a></li>
+                <li><a href="~/HTML/Masilo.html">Masilo</a></li>
+                <li><a href="~/HTML/Lynn.html">Lynn</a></li>
+                <li><a href="~/HTML/Kopano.html">Kopano</a></li>
+            </ul>
         </div>
     </nav>
+
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -43,3 +47,4 @@
     @RenderSection("scripts", required: false)
 </body>
 </html>
+

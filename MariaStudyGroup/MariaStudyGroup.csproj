@@ -154,7 +154,11 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="wwwroot\Kopano.html" />
+    <Content Include="wwwroot\Lynn.html" />
     <Content Include="wwwroot\Maria.html" />
+    <Content Include="wwwroot\Masilo.html" />
+    <Content Include="wwwroot\Petrus.html" />
     <Content Include="wwwroot\Style.css" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />

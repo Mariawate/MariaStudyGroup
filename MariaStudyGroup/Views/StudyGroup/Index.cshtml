@@ -1,21 +1,25 @@
 ﻿
 @model List<MariaStudyGroup.Models.StudyGroupMember>
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Study Group Members";
 }
 
 <h2>Study Group Members</h2>
 
-<table class="table">
+<link href="@Url.Content("~/wwwroot/Style.css")" rel="stylesheet" type="text/css" />
+
+<table border="1">
     <thead>
         <tr>
             <th>Student Number</th>
             <th>Name</th>
             <th>Surname</th>
             <th>Email Address</th>
-            <th>Profile</th>
+            <th>Link to Personal Page</th>
         </tr>
     </thead>
+
     <tbody>
         @foreach (var member in Model)
         {
@@ -24,10 +28,14 @@
                 <td>@member.Name</td>
                 <td>@member.Surname</td>
                 <td>@member.EmailAddress</td>
-                <td><a href="@Url.Content(member.MyLink)" class="btn">LINK</a></td>
-               
+                <td>
+                    <a href="@Url.Content(member.MyLink)" class="btn btn-primary" target="_blank">LINK</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+
+
+
 
